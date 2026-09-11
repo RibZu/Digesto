@@ -1,0 +1,227 @@
+
+.digesto-header {
+  width: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 4px 20px -2px rgba(123, 17, 88, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+.header-top-bar {
+  background: linear-gradient(90deg, #570a3c 0%, #7b1158 100%);
+  color: #faebd7;
+  font-size: 0.825rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 36px;
+}
+
+.institution-name {
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #f7dfc0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.top-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.top-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  opacity: 0.9;
+}
+
+.top-link:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffd899;
+}
+
+.link-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.7rem;
+}
+
+
+.header-main-bar {
+  background: #ffffff;
+  border-bottom: 3px solid #7b1158;
+  padding: 0.85rem 0;
+}
+
+.main-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  text-align: left;
+}
+
+.brand-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7b1158 0%, #980068 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffd99f;
+  box-shadow: 0 4px 10px rgba(123, 17, 88, 0.25);
+  flex-shrink: 0;
+}
+
+.brand-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #7b1158 0%, #a2106e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+  background: #fff2e0;
+  color: #8b3c00;
+  border: 1px solid #f9d8a7;
+}
+
+.brand-subtitle {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-primary {
+  background: #7b1158;
+  color: #ffffff;
+  border: 1px solid #7b1158;
+}
+
+.btn-primary:hover {
+  background: #96176d;
+  box-shadow: 0 4px 12px rgba(123, 17, 88, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-ghost:hover {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+
+@media (max-width: 768px) {
+  .institution-name {
+    display: none;
+  }
+  
+  .top-bar-content {
+    justify-content: flex-end;
+  }
+
+  .main-bar-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
